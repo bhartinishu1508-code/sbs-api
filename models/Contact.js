@@ -1,10 +1,10 @@
 const mongoose=require('mongoose')
 const contactSchema=new mongoose.Schema({
-    fullName:String,
-    email:String,
-    phone:String,
-    address:String,
-    gender:String
+    fullName:{type:String,required:true},
+    email:{type:String,required:true},
+    phone:{type:String,required:true},
+    address:{type:String,required:true},
+    gender:{type:String,required:true}
 })
 
 
