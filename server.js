@@ -6,6 +6,6 @@ const server = http.createServer(app)
 
 
 
-server.listen(3000,()=>{
+server.listen(3002,()=>{
     console.log("app chal raha hai.......")
 })

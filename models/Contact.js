@@ -4,7 +4,10 @@ const contactSchema=new mongoose.Schema({
     email:{type:String,required:true},
     phone:{type:String,required:true},
     address:{type:String,required:true},
-    gender:{type:String,required:true}
+    gender:{type:String,required:true},
+    userId:{type:mongoose.Schema.Types.ObjectId,required:true,ref:'user'},
+    imageId:{type:String,required:true},
+    imageUrl:{type:String,required:true}
 })
 
 
